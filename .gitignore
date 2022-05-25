@@ -1,3 +1,7 @@
+
+.idea/
+*.jml
+target/
 # Compiled class file
 *.class
 
