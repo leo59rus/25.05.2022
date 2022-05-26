@@ -5,13 +5,18 @@ public class Outer {
     private static int i;
 
 
-    private void m(){
+    private void m() {
+        class A { //локальный класс
 
+        }
+        final A a = new A();
     }
+
     private static void sm() {
 
     }
-    public class Inner{
+
+    public class Inner { //внутренний класс
         void innerM() {
             a = 1;
             i = 42;
@@ -20,9 +25,11 @@ public class Outer {
         }
     }
 
-    public static class StaticInner {
-        void innerM() {
+    public static class StaticInner {  //вложенный класс
+        public static int g;
 
+        void innerM() {
+            int si;
             i = 42;
 
             sm();
