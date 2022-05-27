@@ -17,7 +17,36 @@ public class App {
                 System.out.println("swim");
             }
         };
+        Animal[] animals = {
+            new Cat(),
+                animal,
+                new Animal() {
 
+                    @Override
+                    public void run(int length) {
+
+                    }
+
+                    @Override
+                    public void swim(int length) {
+
+                    }
+                }
+        } ;
+
+
+    }
+}
+
+class Cat extends Animal {
+
+    @Override
+    public void run(int length) {
+
+    }
+
+    @Override
+    public void swim(int length) {
 
     }
 }
