@@ -13,9 +13,9 @@ package hw1_level2;
 //препятствий не идет.
 public class App {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Пушок", "белый");
-        Human human1 = new Human("Сильвестер", 32);
-        Robot robot1 = new Robot("SI-corp 5.2",54);
+        Cat cat1 = new Cat("Пушок");
+        Human human1 = new Human("Сильвестер");
+        Robot robot1 = new Robot("SI-corp 5.2");
         System.out.println(cat1.toString());
         System.out.println(human1.toString());
         System.out.println(robot1.toString());
@@ -33,5 +33,14 @@ public class App {
         robot1.runTrack(29);
         robot1.jump(5000);
         robot1.jumpWall(5000);
+
+       // String[] athlets = {
+       //         String.valueOf(cat1),
+       //         String.valueOf(human1),
+       //         String.valueOf(robot1)
+       // };
+       // for (String athlet : athlets) {
+       //     if (athlet.getLengthRun(
+       // }
     }
 }

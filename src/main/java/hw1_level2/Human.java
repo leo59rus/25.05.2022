@@ -2,20 +2,29 @@ package hw1_level2;
 
 class Human implements Ready, RunTrack, Wall{
     private String name;
-    private int age;
+    private double lengthRun = 10;
+    private int heightJump = 120;
 
-    public Human(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public double getLengthRun() {
+        return lengthRun;
     }
+
+    public int getHeightJump() {
+        return heightJump;
+    }
+
+    public Human(String name) {
+        this.name = name;
+
+    }
+
+
 
     public String getName() {
         return name;
     }
 
-    public int getAge() {
-        return age;
-    }
+
 
     @Override
     public void run(double length) {
@@ -33,7 +42,8 @@ class Human implements Ready, RunTrack, Wall{
     public String toString() {
         return "Human{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", lengthRun=" + lengthRun +
+                ", heightJump=" + heightJump +
                 '}';
     }
 

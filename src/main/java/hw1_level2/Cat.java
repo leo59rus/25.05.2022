@@ -2,19 +2,27 @@ package hw1_level2;
 
 public class Cat implements Ready, RunTrack, Wall{
     private String name;
-    private String color;
+    private double lengthRun = 0.2;
+    private int heightJump = 25;
+
+
+
+    public double getLengthRun() {
+        return lengthRun;
+    }
+
+    public int getHeightJump() {
+        return heightJump;
+    }
 
     public String getName() {
         return name;
     }
 
-    public String getColor() {
-        return color;
-    }
 
-    public Cat(String name, String color) {
+
+    public Cat(String name) {
         this.name = name;
-        this.color = color;
     }
 
     @Override
@@ -40,10 +48,10 @@ public class Cat implements Ready, RunTrack, Wall{
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
-                ", color='" + color + '\'' +
+                ", lengthRun=" + lengthRun +
+                ", heightJump=" + heightJump +
                 '}';
     }
-
 
     @Override
     public void jumpWall(int height) {
