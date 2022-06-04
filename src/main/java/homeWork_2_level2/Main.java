@@ -26,7 +26,7 @@ public class Main {
         }
         catch (MyArrayDataException e) {
             System.out.println("Неправильное значение массива!");
-            System.out.println("Ошибка в ячейке: " + e.i + "x" + e.j);
+            System.out.println("Ошибка в ячейке: " + e.getI() + "x" + e.getJ());
         }
 
     }

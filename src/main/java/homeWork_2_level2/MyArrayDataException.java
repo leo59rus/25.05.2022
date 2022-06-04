@@ -1,8 +1,8 @@
 package homeWork_2_level2;
 
 public class MyArrayDataException extends Exception {
-    public int i;
-    public int j;
+    private int i;
+    private int j;
 
     MyArrayDataException(int i, int j) {
         this.i = i;
@@ -10,4 +10,11 @@ public class MyArrayDataException extends Exception {
 
     }
 
+    public int getI() {
+        return i;
+    }
+
+    public int getJ() {
+        return j;
+    }
 }
