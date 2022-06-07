@@ -2,6 +2,7 @@ package hw1_2_Level2;
 
 public class App {
     public static void main(String[] args) {
+
         //массив игроков
         Player[] players = {
                 new Cat("Bony", 120, 1),
