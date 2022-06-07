@@ -31,6 +31,7 @@ public class App {
                 barrier.overcome(player);
             }
         }
+        System.out.println();
         System.out.println("И на финише мы наблюдаем:");
         //проходим циклом через игроков и проверяем кто в игре
         for (Player player : players) {

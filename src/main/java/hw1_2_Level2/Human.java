@@ -20,27 +20,18 @@ public class Human implements Player {
     }
 
     @Override
-    public void jump(Wall wall) {
-        if (isPlay()) { //если игрок в игре
-            if (jumpLimit >= wall.getHeight()) { //предел прыжка б/р стены
-                System.out.println(this + " успешно предолел " + wall);
-            } else {
-                System.out.println(this + " не предолел " + wall);
-                play = false; //игрок не в игре
-            }
-        }
+    public int getRunLimit() {
+        return runLimit;
     }
 
     @Override
-    public void run(Track track) {
-        if (isPlay()) { //если игрок в игре
-            if (runLimit >= track.getLength()) { //предел бега б/р бег дорожки
-                System.out.println(this + " успешно предолел " + track);
-            } else {
-                System.out.println(this + " не предолел " + track);
-                play = false; //игрок не в игре
-            }
-        }
+    public int getJumpLimit() {
+        return jumpLimit;
+    }
+
+    @Override
+    public void setPlay(boolean play) {
+        this.play = play;
     }
 
     @Override
